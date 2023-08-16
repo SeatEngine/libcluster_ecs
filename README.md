@@ -37,6 +37,14 @@ by adding `libcluster_ecs` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:libcluster_ecs, "~> 0.4"}]
+  [{:libcluster_ecs, "~> 0.4" organization: "seatengine"}]
 end
+```
+
+## Release  
+
+```bash
+mix deps.compile 
+mix compile
+mix hex.publish --organization seatengine
 ```
